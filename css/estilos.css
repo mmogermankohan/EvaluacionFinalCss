@@ -1,0 +1,243 @@
+
+/*INICIO | Quitamos los bordes por defectos*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*BODY | Agregando color de fondo general*/
+/*****************************************/
+body{
+  background-color: #02010a;
+  min-width: 350px;
+}
+
+/*BODY | HEADER | Alineaciones de la cabecera/
+/********************************************/
+#cabecera{
+  background-color: #5b7989;
+  font-family: "Dancing Script";
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+/*BODY | HEADER | ARTICLE | Edicion del titulo*/
+/**********************************************/
+.titulo{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0px 2px #02010a;
+}
+/*BODY | HEADER | NAV | Edicion del menu/enlaces*/
+/************************************************/
+.menu{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+}
+
+.inicio{
+  text-decoration: none;
+}
+/*BODY | IMG CENTRAL | Edicion de la imagen principal y su contenedor*/
+/*********************************************************************/
+.fondoimgcentral{
+  width: 100%;
+  height: 0 auto;
+  background-color: #82c3a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.articuloimgcentral{
+  width: 100%;
+  margin: 2.5%;
+  display: flex;/*Alineacion de la imagen*/
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcentral{
+  width: 90%;
+  display: block;;/*Hredando caracteristicas "padre"*/
+  max-width: 800px;/*limite maxixmo de la imagen*/
+  margin: 0 auto;
+  box-shadow: 10px 10px 30px 5px #000000;
+   -moz-box-shadow: 10px 10px 30px 5px #000000;/*Respaldo p/navegador*/
+   -webkit-box-shadow: 10px 10px 30px 5px #000000;/*Respaldo p/navegador*/
+}
+
+/*BODY | SECTION | Trabajando el contenedor de los articulos*/
+/************************************************************/
+#contenedordearticulos{
+  background-color: #d5c75f;
+  border-top: 1px solid black;
+  display: flex;
+  width: 100%;
+  height: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*BODY | SECTION | IMG IZQUIERDA | Edicion de la imagen izquierda y su contenedor*/
+/********************************************************************************/
+
+.articuloizquierda{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imgizquierda{
+  width: 85%;
+  max-height: 350px;
+  margin-left: 7.5%;
+}
+
+.rotar{
+  transition: transform 0.5s ease-out;
+   -webkit-transition: -webkit-transform 0.5 ease-out;
+   -moz-transition: -moz-transform 0.5s ease-out;
+}
+
+.rotar:hover{
+  transform: rotate(10deg);
+   -webkit-transform: rotate(10deg);/*Respaldo p/navegador*/
+   -moz-transform: rotate(10deg);/*Respaldo p/navegador*/
+  box-shadow: 10px 10px 30px 2px #82c3a6;
+   -moz-box-shadow: 10px 10px 30px 2px #82c3a6;/*Respaldo p/navegador*/
+   -webkit-box-shadow: 10px 10px 30px 2px #82c3a6;/*Respaldo p/navegador*/
+  border: 2px solid black;
+}
+
+figcaption{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+
+/*BODY | SECTION | IMG DERECHA | Edicion de la imagen derecha y su contenedor*/
+/*****************************************************************************/
+.articuloderecha{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;/*row=izquierda a derecha*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgderecha{
+  width: 85%;
+  max-height: 350px;
+  margin-left: 7.5%;
+}
+
+.trasladar{
+  transition: transform 0.5s ease-out;
+   -webkit-transition: -webkit-transform 0.5 ease-out;
+   -moz-transition: -moz-transform 0.5s ease-out;
+}
+
+.trasladar:hover{
+  transform: translate(5px, 20px);
+   -webkit-transform: translate(20px, 5px);
+   -moz-transform: translate(20px, 5px);
+  box-shadow: 10px 10px 30px 2px #82c3a6;
+   -moz-box-shadow: 10px 10px 30px 2px #82c3a6;/*Respaldo p/navegador*/
+   -webkit-box-shadow: 10px 10px 30px 2px #82c3a6;/*Respaldo p/navegador*/
+  border: 2px solid black;
+}
+
+/*FOOTER | DIV | SECTION | Edicion del contenedor de articulos n°2*/
+/******************************************************************/
+#contenedordearticulos2{
+  width: 100%;
+  background-color: #c6d5c5;
+  font-family: "Dancing Script";
+  margin: 0 auto;
+  height: auto;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*FOOTER | Edicion de textos */
+/*****************************/
+footer > section > article {
+  color: black;
+}
+
+footer > section > article > h2{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.icono{
+  margin-right: 5px;/*Pequeño margen entre texto e iconos*/
+}
+
+
+/*ANIMACION KEYFRAME*/
+/********************/
+body{
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+  }
+  0%{
+  margin-top: 150%;
+  }
+  60%{
+  margin-top: -5%;
+  }
+  100%{
+  margin-top: 0%;
+  }
+  }
